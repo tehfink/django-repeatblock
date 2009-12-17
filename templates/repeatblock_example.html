@@ -1,0 +1,9 @@
+{% load repeatblock %}
+<html>
+<head>
+<title>{% block title %}Repeatblock{% if title %} {{ title }}{% endif %}{% endblock %}</title>
+</head>
+<body>
+<h1>{% repeatblock title %}</h1>
+<p>The title is &quot;{% repeatblock title %}&quot;</p>
+</body>
