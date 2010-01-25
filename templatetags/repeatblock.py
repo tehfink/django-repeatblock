@@ -13,7 +13,7 @@ class RepeatBlockNode(template.Node):
         return self.block.nodelist
 
     def render(self, context):
-        return self.nodelist.render(context)
+        return self.block.render(context)
 
 
 @register.tag
